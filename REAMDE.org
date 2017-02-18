@@ -1,1 +1,8 @@
 #+TITLE: Eduroam Setup Guides and Sample Configurations
+
+Updated 18.feb.2017 19:18 by Eric Qing Zou:
+There is been a known issue about computers running on Ubuntu some times failed to reconnect to wifi from wake up. This can been fixed by restart the "network-manager.service". One can run the following command in terminal to trigger this event:
+
+" sudo systemctl restart network-manager.service "
+
+A bash script named "wifiRestart.sh" containing this command is to be found here in the root directory.
